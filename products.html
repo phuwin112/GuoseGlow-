@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品系列GuoseGlow</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- 顶部导航栏（与首页相同） -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src= "images/logo2.png" alt="卡姿兰"></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="member.html">Rewards</a></li>
+                    <li><a href="stores.html">Stores</a></li>
+		            <li><a href="contact.html" >Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 产品页面包屑导航 -->
+    <section class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><i class="fas fa-angle-right"></i></li>
+                <li>产品系列</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 产品分类筛选 -->
+    <section class="product-filter">
+        <div class="container">
+            <div class="filter-header">
+                <h1>Product Series</h1>
+                <div class="filter-sort">
+                    <label for="sort">Sort By：</label>
+                    <select id="sort">
+                        <option value="default">Default</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                        <option value="popular">Best Sellers</option>
+                        <option value="newest">New Arrivals </option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="filter-content">
+                <aside class="filter-sidebar">
+                    <div class="filter-group">
+                        <h3>Product Category</h3>
+                        <ul>
+                          <li><a href="#" class="active">All Products</a></li>
+                            <li><a href="#">Lip Makeup</a></li>
+                            <li><a href="#">Eye Makeup</a></li>
+                            <li><a href="#">Face Makeup</a></li>
+                            <li><a href="#">Makeup Sets</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3>Product Collection</h3>
+                        <ul>
+                          <li><a href="#" class="active">All&nbsp;Collection</a></li>
+                            <li><a href="#">Matte Collection</a></li>
+                            <li><a href="#">Dewy Collection</a></li>
+                            <li><a href="#">Long-Wear Collection</a></li>
+                            <li><a href="#">Limited Edition Collection</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3>Price Range</h3>
+                        <div class="price-range">
+                            <input type="range" min="0" max="500" value="250" class="slider" id="priceRange">
+                            <div class="price-values">
+                                <span>¥0</span>
+                                <span>¥250</span>
+                            </div>
+                            <div class="selected-price">
+                                Your Selections ：<span id="selectedPrice">$0-$250</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3>Product Benefits</h3>
+                        <div class="filter-tags">
+                            <a href="#" class="tag">Long-Lasting</a>
+                            <a href="#" class="tag">Hydrating</a>
+                            <a href="#" class="tag">Coverage</a>
+                            <a href="#" class="tag">Waterproof</a>
+                            <a href="#" class="tag">Sweat-Proof</a>
+                            <a href="#" class="tag">Non-Smudging</a>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-block">Reset Filters </button>
+                </aside>
+                
+                <main class="product-list">
+                    <div class="product-grid">
+                        <!-- 产品卡片1 -->
+                        <div class="product-card">
+                            <div class="product-badge">NEW</div>
+                            <a href="product-detail.html">
+                                <img src= "images/product-1.jpg" alt="眼影盘">
+                            </a>
+                            <div class="product-info">
+                                <h3><a href="product-detail.html">Perfect Diary 12-Color Eyeshadow "Little Prince" Palette</a></h3>
+                                <p class="product-desc">Light and long-lasting, no makeup smudging for 16 hours</p>
+                                <div class="product-meta">
+                                  <p class="product-price">$18</p>
+                                    <div class="product-actions">
+                                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                                        <button class="add-to-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 产品卡片2 -->
+                        <div class="product-card">
+                            <div class="product-badge">Bestsellers</div>
+                            <a href="product-detail.html">
+                                <img src="images/product-2.jpg" alt="大眼睛睫毛膏">
+                            </a>
+                            <div class="product-info">
+                                <h3><a href="product-detail.html">CARSLAN Big Eye Mascara</a></h3>
+                                <p class="product-desc">Thick and curly, without smudging</p>
+                                <div class="product-meta">
+                                    <p class="product-price">$13</p>
+                                    <div class="product-actions">
+                                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                                        <button class="add-to-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 产品卡片3 -->
+                        <div class="product-card">
+                            <a href="product-detail.html">
+                                <img src="images/product-3.jpg" alt="水润气垫BB霜">
+                            </a>
+                            <div class="product-info">
+                                <h3><a href="product-detail.html">TIMAGE "Runyu" Powder Paste</a></h3>
+                                <p class="product-desc">Long-lasting nourishment, 16 hours of penetrating and radiant skin</p>
+                                <div class="product-meta">
+                                    <p class="product-price">$30</p>
+                                    <div class="product-actions">
+                                      <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                                        <button class="add-to-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 产品卡片4 -->
+                        <div class="product-card">
+                            <a href="product-detail.html">
+                                <img src="images/product-4.jpg" alt="多色眼影盘">
+                            </a>
+                            <div class="product-info">
+                                <h3><a href="product-detail.html">CARSLAN Multi-color eyeshadow palette</a></h3>
+                                <p class="product-desc">12-color combinations make it easy to create various makeup looks</p>
+                                <div class="product-meta">
+                                    <p class="product-price">$28</p>
+                                    <div class="product-actions">
+                                      <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                                        <button class="add-to-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 产品卡片5 -->
+                        <div class="product-card">
+                            <div class="product-badge">LE</div>
+                            <a href="product-detail.html">
+                                <img src= "images/product-5.jpg" alt="星钻唇膏">
+                            </a>
+                            <div class="product-info">
+                                <h3><a href="product-detail.html">PERFECT DIARY Weightless Soft-velvet Blurring Loose Powder</a></h3>
+                                <p class="product-desc">Lightweight Wear、Oil-Control、Blur Imperfections&nbsp;&nbsp;&nbsp;</p>
+                                <div class="product-meta">
+                                  <p class="product-price">$20</p>
+                                    <div class="product-actions">
+                                      <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                                        <button class="add-to-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 产品卡片6 -->
+                        <div class="product-card">
+                            <a href="product-detail.html">
+                                <img src= "images/product-6.jpg" alt="妆前乳">
+                            </a> 
+                            <div class="product-info">
+                                <h3><a href="product-detail.html">TIMAGE"Master" Multi-Effect Primer</a></h3>
+                                <p class="product-desc">Soft and smooth, the savior of card powder</p>
+                                <div class="product-meta">
+                                  <p class="product-price">$22</p>
+                                    <div class="product-actions">
+                                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                                        <button class="add-to-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 产品卡片7 -->
+                        <div class="product-card">
+                            <a href="product-detail.html">
+                                <img src="images/product-7.jpg" alt="修容高光盘">
+                            </a>
+                            <div class="product-info">
+                                <h3><a href="product-detail.html">Contouring high disc</a></h3>
+                                <p class="product-desc">hree-dimensional outline, naturally refined</p>
+                                <div class="product-meta">
+                                    <p class="product-price">$21</p>
+                                    <div class="product-actions">
+                                      <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                                        <button class="add-to-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 产品卡片8 -->
+                        <div class="product-card">
+                            <div class="product-badge">Set</div>
+                            <a href="product-detail.html">
+                                <img src= "images/category-set.jpg" alt="补水套装">
+                            </a>
+                            <div class="product-info">
+                                <h3><a href="product-detail.html">KANS Red Hourglass Skincare Set (Toner & Emulsion)</a></h3>
+                                <p class="product-desc">Hydrating, firming, anti-wrinkle and skin care</p>
+                                <div class="product-meta">
+                                    <p class="product-price">$41</p>
+                                    <div class="product-actions">
+                                      <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                                        <button class="add-to-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 分页导航 -->
+                    <div class="pagination">
+                        <a href="#" class="page-nav disabled"><i class="fas fa-angle-left"></i> Previous page
+
+</a>
+                        <a href="#" class="page-number active">1</a>
+                        <a href="#" class="page-number">2</a>
+                        <a href="#" class="page-number">3</a>
+                        <a href="#" class="page-number">4</a>
+                        <a href="#" class="page-number">5</a>
+                        <a href="#" class="page-nav">Next page <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚（与首页相同） -->
+   <footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Shopping Guide</h4>
+        <ul>
+          <li><a href="#">How to Order</a></li>
+          <li><a href="#">Membership</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Shipping & Delivery</h4>
+        <ul>
+          <li><a href="#">Click and Collect</a></li>
+          <li><a href="#">Delivery</a></li>
+          <li><a href="#">Delivery Areas</a></li>
+          <li><a href="#">Delivery Charges</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Payment Methods</h4>
+        <ul>
+          <li><a href="#">Online Payment</a></li>
+          <li><a href="#">Cash on Delivery (COD)</a></li>
+          <li><a href="#">Installment Plans</a></li>
+          <li><a href="#">Gift Card Payment</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About GuoseGlow</h4>
+        <ul>
+          <li><a href="#">About GuoseGlow</a></li>
+          <li><a href="#">Newsroom</a></li>
+          <li><a href="#">Join Us</a></li>
+          <li><a href="#">Store Locator</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-links"> <a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-google"></i></a> <a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-facebook"></i></a> </div>
+        <div class="contact-info">
+          <p>Customer Service Hotline:400-123-4567</p>
+          <p>Service Hours：9:00-21:00</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 GuoseGlow Chinese Beauty Brand Promotion Co., Ltd. Privacy Policy</p>
+      <div class="legal-links"> <a href="#"> Privacy Policy </a> <a href="#"> Terms of Use</a> <a href="#">Legal Disclaimer</a> </div>
+    </div>
+  </div>
+</footer>
+   
+</body>
+</html>

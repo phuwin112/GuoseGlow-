@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>我的购物车-GuoseGlow</title>
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<!-- 顶部导航栏 -->
+<header class="header">
+  <div class="container">
+    <div class="logo"> <a href="#"><img src= "images/logo2.png" alt="卡姿兰"></a> </div>
+    <nav class="main-nav">
+      <ul>
+       <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+		<li><a href="tutorials.html">Tutorials</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="member.html">Rewards</a></li>
+        <li><a href="stores.html">Stores</a></li>
+		<li><a href="contact.html"  class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-icons"> <a href="#"><i class="fas fa-search"></i></a> <a href="#"><i class="fas fa-user"></i></a> <a href="#"><i class="fas fa-shopping-bag"></i></a> </div>
+  </div>
+</header>
+<!-- 购物车容器 - 独立封装 -->
+<div class="cart-container">
+  <div class="cart-header">
+    <h1>我的购物车</h1>
+  </div>
+  <div class="cart-content"> 
+    <!-- 侧边栏菜单 -->
+    <div class="cart-sidebar">
+      <ul class="cart-menu">
+        <li><a href="#"><i class="fas fa-user"></i> Account Overview</a></li>
+        <li><a href="#"><i class="fas fa-shopping-bag"></i> My order</a></li>
+        <li><a href="#" class="active"><i class="fas fa-shopping-cart"></i> Shopping cart</a></li>
+        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Delivery address</a></li>
+        <li><a href="#"><i class="fas fa-heart"></i> My collection</a></li>
+        <li><a href="#"><i class="fas fa-star"></i> My points</a></li>
+        <li><a href="#"><i class="fas fa-ticket-alt"></i> My coupon</a></li>
+        <li><a href="#"><i class="fas fa-cog"></i> Account Settings</a></li>
+      </ul>
+    </div>
+    
+    <!-- 主内容区 -->
+    <div class="cart-main"> 
+      <!-- 购物车商品列表 -->
+      <div class="cart-card">
+        <h2>Shopping cart items (3)</h2>
+        <div class="cart-items"> 
+          <!-- 单个商品项 -->
+          <div class="cart-item">
+            <div class="item-checkbox">
+              <input type="checkbox" checked>
+            </div>
+            <img src= "images/product-5.jpg" alt="Product image" class="item-image">
+            <div class="item-details">
+              <div class="item-title">WPERFECT DIARY eightless Soft-velvet Blurring Loose Powder</div>
+              <div class="item-spec">Color number: M01  |  Specification:7.2g</div>
+              <div class="item-price">$20 <span class="item-original-price">$25</span></div>
+              <div class="item-actions">
+                <div class="quantity-control">
+                  <button class="quantity-btn">-</button>
+                  <input type="text" class="quantity-input" value="1">
+                  <button class="quantity-btn">+</button>
+                </div>
+                <div class="item-delete"> <i class="fas fa-trash-alt"></i> Delete </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 单个商品项 -->
+          <div class="cart-item">
+            <div class="item-checkbox">
+              <input type="checkbox" checked>
+            </div>
+            <img src="images/product2.jpg" alt="商品图片" class="item-image">
+            <div class="item-details">
+              <div class="item-title">CARSLAN Big Eyes Double Head Mascara</div>
+              <div class="item-spec">Black 丨 Specification: 7mll</div>
+              <div class="item-price">$15 <span class="item-original-price">$19</span></div>
+              <div class="item-actions">
+                <div class="quantity-control">
+                  <button class="quantity-btn">-</button>
+                  <input type="text" class="quantity-input" value="1">
+                  <button class="quantity-btn">+</button>
+                </div>
+                <div class="item-delete"> <i class="fas fa-trash-alt"></i>Delete </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 单个商品项 -->
+          <div class="cart-item">
+            <div class="item-checkbox">
+              <input type="checkbox" checked>
+            </div>
+            <img src="images/product3.jpg" alt="商品图片" class="item-image">
+            <div class="item-details">
+              <div class="item-title">CARSLAN Little Kitten Foundation</div>
+              <div class="item-spec">02 Natural Colo 丨 Specification: 30ml</div>
+              <div class="item-price">$22 <span class="item-original-price">$28</span></div>
+              <div class="item-actions">
+                <div class="quantity-control">
+                  <button class="quantity-btn">-</button>
+                  <input type="text" class="quantity-input" value="1">
+                  <button class="quantity-btn">+</button>
+                </div>
+                <div class="item-delete"> <i class="fas fa-trash-alt"></i> Delete </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 购物车结算 -->
+        <div class="cart-summary">
+          <div class="summary-row"> <span>Subtotal</span> <span>¥57</span> </div>
+          <div class="summary-row"> <span>Discount offer</span> <span>-¥8</span> </div>
+          <div class="summary-row"> <span>Freight charges</span> <span>¥0</span> </div>
+          <div class="summary-row summary-total"> <span>Total</span> <span>¥49</span> </div>
+        </div>
+        <div class="cart-actions">
+          <button class="btn-cart btn-continue">Continue shopping</button>
+          <button class="btn-cart btn-checkout">Checkout</button>
+        </div>
+      </div>
+      
+      <!-- 猜你喜欢 -->
+      <h2 class="recommend-title">Recommended products</h2>
+      <div class="recommend-products"> 
+        <!-- 推荐商品1 -->
+        <div class="product-card"> <img src="images/recommend1.jpg" alt="推荐商品" class="product-image">
+          <div class="product-info">
+            <div class="product-name">CARSLAN Soft Phantom Star Ten-Color Eyeshadow Palette #01 Milk Tea Brown</div>
+            <div class="product-price">$18 <span class="product-original-price">$22</span></div>
+            <button class="product-add">Add to Cart</button>
+          </div>
+        </div>
+        
+        <!-- 推荐商品2 -->
+        <div class="product-card"> <img src="images/recommend2.jpg" alt="推荐商品" class="product-image">
+          <div class="product-info">
+            <div class="product-name">CARSLAN Water Kiss Lipstick #S05 Strawberry Red</div>
+            <div class="product-price">$14 <span class="product-original-price">$18</span></div>
+            <button class="product-add">Add to Cart</button>
+          </div>
+        </div>
+        
+        <!-- 推荐商品3 -->
+        <div class="product-card"> <img src="images/recommend3.jpg" alt="推荐商品" class="product-image">
+          <div class="product-info">
+            <div class="product-name">CARSLAN Cochrane Air Cushion Control Cream #02 Natural </div>
+            <div class="product-price">$24 <span class="product-original-price">$28</span></div>
+            <button class="product-add">Add to Cart</button>
+          </div>
+        </div>
+        
+        <!-- 推荐商品4 -->
+        <div class="product-card"> <img src="images/recommend4.jpg" alt="推荐商品" class="product-image">
+          <div class="product-info">
+            <div class="product-name">CARSLAN Fine Eyebrow Pencil #03 Grayish-brown</div>
+            <div class="product-price">$8 <span class="product-original-price">$12</span></div>
+            <button class="product-add">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 底部 -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Shopping Guide</h4>
+        <ul>
+          <li><a href="#">How to Order</a></li>
+          <li><a href="#">Membership</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Shipping & Delivery</h4>
+        <ul>
+          <li><a href="#">Click and Collect</a></li>
+          <li><a href="#">Delivery</a></li>
+          <li><a href="#">Delivery Areas</a></li>
+          <li><a href="#">Delivery Charges</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Payment Methods</h4>
+        <ul>
+          <li><a href="#">Online Payment</a></li>
+          <li><a href="#">Cash on Delivery (COD)</a></li>
+          <li><a href="#">Installment Plans</a></li>
+          <li><a href="#">Gift Card Payment</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About GuoseGlow</h4>
+        <ul>
+          <li><a href="#">About GuoseGlow</a></li>
+          <li><a href="#">Newsroom</a></li>
+          <li><a href="#">Join Us</a></li>
+          <li><a href="#">Store Locator</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-links"><a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-google"></i></a> <a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-facebook"></i></a> </div>
+        <div class="contact-info">
+          <p>Customer Service Hotline:400-123-4567</p>
+          <p>Service Hours：9:00-21:00</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 GuoseGlow Chinese Beauty Brand Promotion Co., Ltd. Privacy Policy</p>
+      <div class="legal-links"> <a href="#"> Privacy Policy </a> <a href="#"> Terms of Use</a> <a href="#">Legal Disclaimer</a> </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

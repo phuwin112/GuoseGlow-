@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>会员中心-GuoseGlow</title>
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body> 
+<!-- 顶部导航栏（与首页相同） -->
+<header class="header">
+  <div class="container">
+    <div class="logo"> <a href="index.html"><img src= "images/logo2.png" alt="卡姿兰"></a> </div>
+    <nav class="main-nav">
+      <ul>
+     <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="member.html" class="active">Rewards</a></li>
+                    <li><a href="stores.html">Stores</a></li>
+		            <li><a href="contact.html" >Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-icons"> <a href="#"><i class="fas fa-search"></i></a> <a href="#"><i class="fas fa-user"></i></a> <a href="#"><i class="fas fa-shopping-bag"></i></a> </div>
+  </div>
+</header>
+
+<!-- 面包屑导航 -->
+<section class="breadcrumb">
+  <div class="container">
+    <ul>
+      <li><a href="index.html">首页</a></li>
+      <li><i class="fas fa-angle-right"></i></li>
+      <li>会员中心</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 会员中心主内容 -->
+<section class="member-center">
+  <div class="container"> 
+    <!-- 登录/注册切换 -->
+    <div class="auth-tabs">
+      <div class="tab-header">
+        <button class="tab-btn active" data-tab="login">Member login</button>
+        <button class="tab-btn" data-tab="register">New member registration</button>
+      </div>
+      
+      <!-- 登录表单 -->
+      <div class="tab-content active" id="login">
+        <form class="auth-form">
+          <div class="form-group">
+            <label for="login-email">Mobile Number/Email</label>
+            <input type="text" id="login-email" placeholder="Please enter your mobile number or email">
+          </div>
+          <div class="form-group">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" placeholder="Please enter your password">
+            <a href="#" class="forgot-password">Forgot Password?</a> </div>
+          <button type="submit" class="btn btn-block">Login</button>
+          <div class="social-login">
+            <p>Quick Login</p>
+            <div class="social-btns"> <a href="#" class="social-btn wechat"><i class="fab fa-facebook-f"></i> FaceBook</a> <a href="#" class="social-btn weibo"><i class="fab fa-google"></i> Google</a> </div>
+          </div>
+        </form>
+      </div>
+      
+      <!-- 注册表单 -->
+      <div class="tab-content" id="register">
+        <form class="auth-form">
+          <div class="form-group">
+            <label for="register-phone">手机号</label>
+            <input type="tel" id="register-phone" placeholder="请输入手机号">
+            <button type="button" class="btn-sms">获取验证码</button>
+          </div>
+          <div class="form-group">
+            <label for="register-code">验证码</label>
+            <input type="text" id="register-code" placeholder="请输入验证码">
+          </div>
+          <div class="form-group">
+            <label for="register-password">设置密码</label>
+            <input type="password" id="register-password" placeholder="6-20位字母和数字组合">
+          </div>
+          <div class="form-group">
+            <label for="register-confirm">确认密码</label>
+            <input type="password" id="register-confirm" placeholder="再次输入密码">
+          </div>
+          <div class="form-agree">
+            <input type="checkbox" id="agree-terms">
+            <label for="agree-terms">我已阅读并同意<a href="#">《卡姿兰会员协议》</a>和<a href="#">《隐私政策》</a></label>
+          </div>
+          <button type="submit" class="btn btn-block">立即注册</button>
+        </form>
+      </div>
+    </div>
+    
+    <!-- 会员特权展示 -->
+    <div class="member-benefits">
+      <h2 class="section-title">Member Benefits</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon"> <i class="fas fa-gift"></i> </div>
+          <h3>New Member Gift</h3>
+          <p>Sign up now and receive a complimentary welcome gift set, valued at ¥199, featuring trial sizes of our bestselling products.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon"> <i class="fas fa-percent"></i> </div>
+          <h3>Exclusive Member Discounts</h3>
+          <p>Silver Card Members: Enjoy 10% Off</p>
+
+<p>Gold Card Members: Enjoy 15% Off</p>
+
+<p>Black Card Members: Enjoy 20% Off</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon"> <i class="fas fa-birthday-cake"></i> </div>
+          <h3>Birthday Benefits</h3>
+          <p>Claim an exclusive birthday gift and enjoy double points throughout your birthday month.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon"> <i class="fas fa-star"></i> </div>
+          <h3>Points & Rewards</h3>
+          <p>Earn points with every purchase. Redeem them for full-size products, deluxe samples, and exclusive gifts.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon"> <i class="fas fa-ticket-alt"></i> </div>
+          <h3>Members-Only Offers</h3>
+          <p>Get Your Monthly Member-Exclusive Coupon
+Valid online & in-store.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon"> <i class="fas fa-video"></i> </div>
+          <h3>Exclusive Tutorial</h3>
+          <p>Members-Only Makeup Tutorial, Guided by Carslan's Head Makeup Artist</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 会员等级说明 -->
+    <div class="member-levels">
+      <h2 class="section-title">Membership Level </h2>
+      <div class="levels-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Membership Level </th>
+              <th>Growth Points Required</th>
+              <th>Exclusive Discounts</th>
+              <th>Birthday Gift</th>
+              <th>Points Multiplier</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="level-badge silver">Silver Member</span></td>
+              <td>0-999</td>
+              <td>10% Off</td>
+              <td>Birthday Gift</td>
+              <td>1x </td>
+            </tr>
+            <tr>
+              <td><span class="level-badge gold">Gold Card Member</span></td>
+              <td>1000-4999</td>
+              <td>15% off</td>
+              <td>Birthday gift package +¥50 voucher</td>
+              <td>1.2 x</td>
+            </tr>
+            <tr>
+              <td><span class="level-badge platinum">Platinum Member</span></td>
+              <td>5000-9999</td>
+              <td>20% off</td>
+              <td>Birthday gift package +¥100 voucher</td>
+              <td>1.5x</td>
+            </tr>
+            <tr>
+              <td><span class="level-badge diamond">Black Card Member</span></td>
+              <td>10000+</td>
+              <td>20% off + new product trial</td>
+              <td>Exclusive birthday gift box</td>
+              <td>2x</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="level-notes">
+        <p><strong>Ways to Earn Points:</strong>Earn 1 point for every ¥1 spent、
+
+Participate in activities to receive bonus points.</p>
+        <p><strong>Membership Tier Validity: </strong>Your membership tier is valid for one year、It will be re-evaluated upon expiration based on the total points accumulated over the past year.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 页脚（与首页相同） -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Shopping Guide</h4>
+        <ul>
+          <li><a href="#">How to Order</a></li>
+          <li><a href="#">Membership</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Shipping & Delivery</h4>
+        <ul>
+          <li><a href="#">Click and Collect</a></li>
+          <li><a href="#">Delivery</a></li>
+          <li><a href="#">Delivery Areas</a></li>
+          <li><a href="#">Delivery Charges</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Payment Methods</h4>
+        <ul>
+          <li><a href="#">Online Payment</a></li>
+          <li><a href="#">Cash on Delivery (COD)</a></li>
+          <li><a href="#">Installment Plans</a></li>
+          <li><a href="#">Gift Card Payment</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About GuoseGlow</h4>
+        <ul>
+          <li><a href="#">About GuoseGlow</a></li>
+          <li><a href="#">Newsroom</a></li>
+          <li><a href="#">Join Us</a></li>
+          <li><a href="#">Store Locator</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+     
+		<div class="social-links"> <a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-google"></i></a> <a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-facebook"></i></a> </div>
+			
+			
+          <p>Customer Service Hotline:400-123-4567</p>
+          <p>Service Hours：9:00-21:00</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 GuoseGlow Chinese Beauty Brand Promotion Co., Ltd. Privacy Policy</p>
+      <div class="legal-links"> <a href="#"> Privacy Policy </a> <a href="#"> Terms of Use</a> <a href="#">Legal Disclaimer</a> </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>线下门店-GuoseGlow</title>
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<!-- 顶部导航栏（与首页相同） -->
+<header class="header">
+  <div class="container">
+    <div class="logo"> <a href="index.html"><img src= "images/logo2.png" alt="卡姿兰" width="300" height="600"></a> </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+		   <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="member.html">Rewards</a></li>
+                    <li><a href="stores.html" class="active">Stores</a></li>
+		  <li><a href="contact.html" >Contact</a></li>
+     
+      </ul>
+    </nav>
+    <div class="header-icons"> <a href="#"><i class="fas fa-search"></i></a> <a href="#"><i class="fas fa-user"></i></a> <a href="#"><i class="fas fa-shopping-bag"></i></a> </div>
+  </div>
+</header>
+
+<!-- 面包屑导航 -->
+<section class="breadcrumb">
+  <div class="container">
+    <ul>
+      <li><a href="index.html">首页</a></li>
+      <li><i class="fas fa-angle-right"></i></li>
+      <li>线下门店</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 门店搜索筛选 -->
+<section class="store-search">
+  <div class="container">
+    <div class="search-header">
+      <h1>Offline stores</h1>
+      <p>All our stores across the country offer you professional makeup services</p>
+    </div>
+    <div class="search-filter">
+      <div class="filter-group">
+        <label for="city-select">City</label>
+        <select id="city-select">
+          <option value="">All cities</option>
+          <option value="beijing">Beijing</option>
+          <option value="shanghai">Shanghai</option>
+          <option value="guangzhou">Guangzhou</option>
+          <option value="shenzhen">Shenzhen</option>
+          <option value="chengdu">Chengdu</option>
+          <option value="hangzhou">Hangzhou</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="store-type">Store type</label>
+        <select id="store-type">
+          <option value="">All types</option>
+          <option value="flagship">Flagship store</option>
+          <option value="counter">Counter</option>
+          <option value="beauty">Beauty experience store</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="store-service">Special services</label>
+        <select id="store-service">
+          <option value="">All services</option>
+          <option value="makeup">Makeup service</option>
+          <option value="skincare">Skin test</option>
+          <option value="class">Makeup class</option>
+        </select>
+      </div>
+      <button class="btn">Search for stores</button>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- 门店列表 -->
+<section class="store-list">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Nearby stores</h2>
+      <div class="location-info"> <i class="fas fa-map-marker-alt"></i> <span id="current-location">The current location is being located...</span> </div>
+    </div>
+    <div class="stores-grid"> 
+      <!-- 门店卡片1 -->
+      <div class="store-card">
+        <div class="store-image"> <img src= "images/store-1.jpg" alt="卡姿兰北京国贸旗舰店"> <span class="store-badge">Flagship store</span> </div>
+        <div class="store-info">
+          <h3>MAOGEPING Counter in Kunming, Yunnan</h3>
+          <p class="store-address"><i class="fas fa-map-marker-alt"></i>B125B-6, B1 Floor, Kunming Henglong Plaza, No. 21-23, Dongfang East Road, Panlong District, Kunming City, Yunnan Province</p>
+          <p class="store-hours"><i class="fas fa-clock"></i> 10:00-22:00</p>
+          <p class="store-phone"><i class="fas fa-phone"></i> 010-12345678</p>
+          <div class="store-services"> <span class="service-tag">Makeup service</span> <span class="service-tag">Skin test</span> <span class="service-tag">Makeup class</span> </div>
+          <div class="store-actions"> <a href="#" class="btn btn-outline btn-small"><i class="fas fa-route"></i> Navigation</a> <a href="#" class="btn btn-small"><i class="fas fa-calendar-check"></i>Reservation</a> </div>
+        </div>
+      </div>
+      
+      <!-- 门店卡片2 -->
+      <div class="store-card">
+        <div class="store-image"> <img src= "images/store-2.jpg" alt="卡姿兰上海南京路专柜"> <span class="store-badge">Counter</span> </div>
+        <div class="store-info">
+          <h3>Winona counter in Chaoyang, Beijing</h3>
+          <p class="store-address"><i class="fas fa-map-marker-alt"></i> 2F, Heshenghui, No. 21, Xidawang Road, Chaoyang District, Beijing</p>
+          <p class="store-hours"><i class="fas fa-clock"></i> 09:30-22:00</p>
+          <p class="store-phone"><i class="fas fa-phone"></i> 021-87654321</p>
+          <div class="store-services"> <span class="service-tag">Skin care service</span> <span class="service-tag">Skin test</span> </div>
+          <div class="store-actions"> <a href="#" class="btn btn-outline btn-small"><i class="fas fa-route"></i> Navigation</a> <a href="#" class="btn btn-small"><i class="fas fa-calendar-check"></i> Reservation</a> </div>
+        </div>
+      </div>
+      
+      <!-- 门店卡片3 -->
+      <div class="store-card">
+        <div class="store-image"> <img src="images/store-3.jpg" alt="卡姿兰广州天河美妆体验店"> <span class="store-badge">Experience Store</span> </div>
+        <div class="store-info">
+          <h3>Kazilan Guangzhou Tianhe Beauty Experience Store</h3>
+          <p class="store-address"><i class="fas fa-map-marker-alt"></i> M Floor, Taikoo Li, No. 383, Tianhe Road, Tianhe District, Guangzhou City</p>
+          <p class="store-hours"><i class="fas fa-clock"></i> 10:00-22:30</p>
+          <p class="store-phone"><i class="fas fa-phone"></i> 020-11223344</p>
+          <div class="store-services"> <span class="service-tag">Makeup service</span> <span class="service-tag">Makeup class</span> </div>
+          <div class="store-actions"> <a href="#" class="btn btn-outline btn-small"><i class="fas fa-route"></i> Navigation</a> <a href="#" class="btn btn-small"><i class="fas fa-calendar-check"></i>Reservation</a> </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 分页导航 -->
+    <div class="pagination"> <a href="#" class="page-nav"><i class="fas fa-angle-left"></i> Previous page</a> <a href="#" class="page-number active">1</a> <a href="#" class="page-number">2</a> <a href="#" class="page-number">3</a> <a href="#" class="page-number">4</a> <a href="#" class="page-number">5</a> <a href="#" class="page-nav">Next page<i class="fas fa-angle-right"></i></a> </div>
+  </div>
+</section>
+
+<!-- 门店特色服务 -->
+<section class="store-services">
+  <div class="container">
+    <h2 class="section-title">Special services of the store</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon"> <i class="fas fa-paint-brush"></i> </div>
+        <h3>Professional makeup services</h3>
+        <p>Professional makeup artists from various brands will create exquisite makeup looks suitable for all occasions for you</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"> <i class="fas fa-magic"></i> </div>
+        <h3>Skin test</h3>
+        <p>Professional instruments analyze skin conditions and recommend the most suitable base makeup products and skin care plans</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"> <i class="fas fa-chalkboard-teacher"></i> </div>
+        <h3>Makeup class</h3>
+        <p>Small-class teaching, learning daily makeup techniques and the latest makeup trends</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"> <i class="fas fa-gift"></i> </div>
+        <h3>Exclusive benefits for members</h3>
+        <p>Members can enjoy exclusive privileges such as free samples and birthday gift packs when visiting the store</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 预约体验 -->
+<section class="store-booking">
+  <div class="container">
+    <div class="booking-content">
+      <h2>Make an appointment for an in-store experience</h2>
+      <p>Make an appointment in advance to enjoy the service of a dedicated makeup artist and avoid queuing</p>
+      <a href="#" class="btn">Book now</a> </div>
+  </div>
+</section>
+
+<!-- 页脚（与首页相同） -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Shopping Guide</h4>
+        <ul>
+          <li><a href="#">How to Order</a></li>
+          <li><a href="#">Membership</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Shipping & Delivery</h4>
+        <ul>
+          <li><a href="#">Click and Collect</a></li>
+          <li><a href="#">Delivery</a></li>
+          <li><a href="#">Delivery Areas</a></li>
+          <li><a href="#">Delivery Charges</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Payment Methods</h4>
+        <ul>
+          <li><a href="#">Online Payment</a></li>
+          <li><a href="#">Cash on Delivery (COD)</a></li>
+          <li><a href="#">Installment Plans</a></li>
+          <li><a href="#">Gift Card Payment</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About GuoseGlow</h4>
+        <ul>
+          <li><a href="#">About GuoseGlow</a></li>
+          <li><a href="#">Newsroom</a></li>
+          <li><a href="#">Join Us</a></li>
+          <li><a href="#">Store Locator</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-links"> <a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-google"></i></a> <a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-facebook"></i></a></div>
+        <div class="contact-info">
+          <p>Customer Service Hotline:400-123-4567</p>
+          <p>Service Hours：9:00-21:00</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 GuoseGlow Chinese Beauty Brand Promotion Co., Ltd. Privacy Policy</p>
+      <div class="legal-links"> <a href="#"> Privacy Policy </a> <a href="#"> Terms of Use</a> <a href="#">Legal Disclaimer</a> </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
