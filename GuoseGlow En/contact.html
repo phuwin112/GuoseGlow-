@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>联系我们-GuoseGlow</title>
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<!-- 顶部导航栏（与首页相同） -->
+<header class="header">
+  <div class="container">
+    <div class="logo"> <a href="index.html"><img src= "images/logo2.png" alt="卡姿兰"></a> </div>
+    <nav class="main-nav">
+      <ul>
+       <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+		<li><a href="tutorials.html">Tutorials</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="member.html">Rewards</a></li>
+        <li><a href="stores.html">Stores</a></li>
+		<li><a href="contact.html" class="active" >Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-icons"> <a href="#"><i class="fas fa-search"></i></a> <a href="#"><i class="fas fa-user"></i></a> <a href="#"><i class="fas fa-shopping-bag"></i></a> </div>
+  </div>
+</header>
+
+<!-- 面包屑导航 -->
+<section class="breadcrumb">
+  <div class="container">
+    <ul>
+      <li><a href="index.html">首页</a></li>
+      <li><i class="fas fa-angle-right"></i></li>
+      <li>Contact us</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 联系我们主内容 -->
+<section class="contact-main">
+  <div class="container">
+    <div class="section-header">
+      <h1>Contact us</h1>
+      <p>No matter what questions or suggestions you have, we are always ready to offer you assistance</p>
+    </div>
+    <div class="contact-content"> 
+      <!-- 联系方式 -->
+      <div class="contact-methods">
+        <div class="contact-card">
+          <div class="contact-icon"> <i class="fas fa-phone-alt"></i> </div>
+          <h3>Customer Service hotline</h3>
+          <p>400-123-4567</p>
+          <p class="contact-hours">Service hours: 9:00-21:00 from Monday to Sunday</p>
+          <a href="tel:4001234567" class="btn btn-small">Call immediately</a> </div>
+        <div class="contact-card">
+          <div class="contact-icon"> <i class="fas fa-envelope"></i> </div>
+          <h3>E-mail</h3>
+          <p>GuoseGlow@.com</p>
+          <p class="contact-hours">Reply within 24 hours</p>
+          <a href="mailto:service@carslan.com" class="btn btn-outline btn-small">Send an email</a> </div>
+        <div class="contact-card">
+          <div class="contact-icon"> <i class="fas fa-comment-dots"></i> </div>
+          <h3>Online customer service</h3>
+          <p>FaceBook/Google</p>
+          <p class="contact-hours">Service hours: 9:00-21:00</p>
+          <a href="#" class="btn btn-small">Consult now</a> </div>
+        <div class="contact-card">
+          <div class="contact-icon"> <i class="fas fa-map-marker-alt"></i> </div>
+          <h3>Company Address</h3>
+          <p>No. 198, Yueken Road, Tianhe District, Guangzhou City</p>
+          <p class="contact-hours">Working hours: 9:00-18:00 from Monday to Friday</p>
+          <a href="#" class="btn btn-outline btn-small">View the map</a> </div>
+      </div>
+      
+      <!-- 联系表单 -->
+      <div class="contact-form-section">
+        <h2 class="section-title">Send a message</h2>
+        <form class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Please enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" id="email" placeholder="Please enter your email address" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="phone">Contact number</label>
+            <input type="tel" id="phone" placeholder="Please enter your contact number">
+          </div>
+          <div class="form-group">
+            <label for="subject">Theme</label>
+            <select id="subject" required>
+              <option value="">Please select the consultation topic</option>
+              <option value="product">Product consultation</option>
+              <option value="order">Order inquiry</option>
+              <option value="after-sale">After-sales service</option>
+              <option value="cooperation">Business cooperation</option>
+              <option value="other">Other questions</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message content</label>
+            <textarea id="message" rows="5" placeholder="Please enter your message" required></textarea>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="btn">Send a message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 常见问题 -->
+<section class="contact-faq">
+  <div class="container">
+    <h2 class="section-title">Q&A</h2>
+    <div class="faq-accordion"> 
+      <!-- 问题1 -->
+      <div class="faq-item">
+        <button class="faq-question"> <span>How to check the logistics information of an order?</span> <i class="fas fa-chevron-down"></i> </button>
+        <div class="faq-answer">
+          <p>您可以通过以下方式查询订单物流信息：</p>
+          <ol>
+            <li>登录您的卡姿兰会员账户，在"我的订单"中查看物流信息</li>
+            <li>关注"卡姿兰官方服务号"，绑定您的手机号后可接收物流推送</li>
+            <li>拨打我们的客服热线400-123-4567，提供订单号查询</li>
+          </ol>
+        </div>
+      </div>
+      
+      <!-- 问题2 -->
+      <div class="faq-item">
+        <button class="faq-question"> <span>What should I do if I have an allergic reaction after using the product?
+
+</span> <i class="fas fa-chevron-down"></i> </button>
+        <div class="faq-answer">
+          <p>如果您在使用卡姿兰产品后出现不适，请立即停止使用该产品，并用清水洗净。建议您：</p>
+          <ul>
+            <li>保留产品包装和购买凭证</li>
+            <li>拍照记录过敏情况</li>
+            <li>及时联系我们的客服人员，我们将为您提供专业的建议和解决方案</li>
+            <li>如症状严重，请立即就医</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- 问题3 -->
+      <div class="faq-item">
+        <button class="faq-question"> <span>How to become a member of GuoseGlow?
+
+</span> <i class="fas fa-chevron-down"></i> </button>
+        <div class="faq-answer">
+          <p>您可以通过以下方式成为卡姿兰会员：</p>
+          <ul>
+            <li>在卡姿兰官网注册账号</li>
+            <li>关注"卡姿兰官方服务号"，通过微信注册</li>
+            <li>在任意卡姿兰线下门店购物时注册</li>
+          </ul>
+          <p>注册会员可享受积分累积、专属折扣、生日礼遇等多项特权。</p>
+        </div>
+      </div>
+      
+      <!-- 问题4 -->
+      <div class="faq-item">
+        <button class="faq-question"> <span>What is the policy for returning and exchanging goods?</span> <i class="fas fa-chevron-down"></i> </button>
+        <div class="faq-answer">
+          <p>卡姿兰提供7天无理由退换货服务(特殊商品除外)：</p>
+          <ul>
+            <li>自收到商品之日起7天内可申请退换货</li>
+            <li>商品需保持完好，未经使用，包装齐全</li>
+            <li>请提供原始购买凭证</li>
+            <li>退换货运费由买家承担(质量问题除外)</li>
+          </ul>
+          <p>详细政策请查阅我们的<a href="#">退换货政策</a>。</p>
+        </div>
+      </div>
+      
+      <!-- 问题5 -->
+      <div class="faq-item">
+        <button class="faq-question"> <span>How to identify genuine brand products?</span> <i class="fas fa-chevron-down"></i> </button>
+        <div class="faq-answer">
+          <p>为确保您购买到正品卡姿兰产品，请注意以下几点：</p>
+          <ul>
+            <li>通过卡姿兰官网、官方旗舰店或授权线下门店购买</li>
+            <li>正品包装上有防伪标识，可通过官方渠道验证</li>
+            <li>正品产品质地细腻，气味清新，使用效果良好</li>
+            <li>价格明显低于市场价的产品需谨慎购买</li>
+          </ul>
+          <p>如有疑问，可通过客服热线400-123-4567咨询。</p>
+        </div>
+      </div>
+    </div>
+    <div class="faq-more"> <a href="#" class="btn btn-outline">View more frequently asked questions</a> </div>
+  </div>
+</section>
+
+<!-- 页脚（与首页相同） -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Shopping Guide</h4>
+        <ul>
+          <li><a href="#">How to Order</a></li>
+          <li><a href="#">Membership</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Shipping & Delivery</h4>
+        <ul>
+          <li><a href="#">Click and Collect</a></li>
+          <li><a href="#">Delivery</a></li>
+          <li><a href="#">Delivery Areas</a></li>
+          <li><a href="#">Delivery Charges</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Payment Methods</h4>
+        <ul>
+          <li><a href="#">Online Payment</a></li>
+          <li><a href="#">Cash on Delivery (COD)</a></li>
+          <li><a href="#">Installment Plans</a></li>
+          <li><a href="#">Gift Card Payment</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About GuoseGlow</h4>
+        <ul>
+          <li><a href="#">About GuoseGlow</a></li>
+          <li><a href="#">Newsroom</a></li>
+          <li><a href="#">Join Us</a></li>
+          <li><a href="#">Store Locator</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-links"> <a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-google"></i></a> <a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-facebook"></i></a> </div>
+        <div class="contact-info">
+          <p>Customer Service Hotline:400-123-4567</p>
+          <p>Service Hours：9:00-21:00</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 GuoseGlow Chinese Beauty Brand Promotion Co., Ltd. Privacy Policy</p>
+      <div class="legal-links"> <a href="#"> Privacy Policy </a> <a href="#"> Terms of Use</a> <a href="#">Legal Disclaimer</a> </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

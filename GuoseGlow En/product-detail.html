@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>产品详情-GuoseGlow</title>
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<!-- 顶部导航栏 -->
+<header class="header">
+  <div class="container">
+    <div class="logo"> <a href="#"><img src= "images/logo2.png" alt="卡姿兰"></a> </div>
+    <nav class="main-nav">
+      <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="member.html">Rewards</a></li>
+                    <li><a href="stores.html">Stores</a></li>
+		            <li><a href="contact.html" >Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-icons"> <a href="#"><i class="fas fa-search"></i></a> <a href="#"><i class="fas fa-user"></i></a> <a href="#"><i class="fas fa-shopping-bag"></i></a> </div>
+  </div>
+</header>
+<!-- 产品详情容器 -->
+<div class="product-container"> 
+  <!-- 面包屑导航 -->
+  <div class="product-breadcrumb"> <a href="#">Home</a> <span>/</span> <a href="#">Makeup</a> <span>/</span> <a href="#">Lip Makeup</a> <span>/</span> &nbsp; <span>/</span> <span>CARSLAN Mist Lip Gloss</span> </div>
+  
+  <!-- 产品主要内容区 -->
+  <div class="product-content"> 
+    <!-- 产品图集 -->
+    <div class="product-gallery"> <img src="images/product-detail-main.jpg" alt="卡姿兰雾吻唇釉" class="main-image">
+      <div class="thumbnail-container"> <img src="images/product-detail-main.jpg" alt="卡姿兰雾吻唇釉" class="thumbnail active" data-large="images/product-detail-main.jpg"> <img src="images/product-detail-main.jpg" alt="卡姿兰雾吻唇釉" class="thumbnail" data-large="images/product-detail-main.jpg"> <img src="images/product-detail-main.jpg" alt="卡姿兰雾吻唇釉" class="thumbnail" data-large="images/product-detail-main.jpg"> <img src="images/product-detail-main.jpg" alt="卡姿兰雾吻唇釉" class="thumbnail" data-large="images/product-detail-main.jpg"> </div>
+    </div>
+    
+    <!-- 产品信息 -->
+    <div class="product-info">
+      <h1 class="product-title">CARSLAN  Fog Lip Gloss #M01 Peach Color</h1>
+      <div class="product-subtitle">Matte finish、long-lasting without fading、 light and not dry out</div>
+      <div class="product-price"> <span class="current-price">$13</span> <span class="original-price">$18</span> <span class="discount-badge">Limited-time 30% off</span> </div>
+      <div class="product-meta">
+        <div class="meta-item">
+          <div class="meta-label">Product Number</div>
+          <div class="meta-value">CSL-2025-M01</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Sales volume</div>
+          <div class="meta-value">5,832 pieces have been sold</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Evaluation</div>
+          <div class="meta-value"> <span style="color: #ffb400;"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i> </span> (1,245 reviews) </div>
+        </div>
+      </div>
+      
+      <!-- 颜色选择 -->
+      <div class="meta-item">
+        <div class="meta-label">Color</div>
+        <div class="meta-value">
+          <div class="color-options">
+            <div class="color-option selected" style="background-color: #f8a7b3;" data-color="M01 蜜桃色"></div>
+            <div class="color-option" style="background-color: #e83a7d;" data-color="M02 玫瑰红"></div>
+            <div class="color-option" style="background-color: #9e1f3c;" data-color="M03 车厘子"></div>
+            <div class="color-option" style="background-color: #f56c6c;" data-color="M04 西瓜红"></div>
+          </div>
+          <div id="selectedColor" style="font-size: 14px; margin-top: 5px;">M01 Peach color</div>
+        </div>
+      </div>
+      
+      <!-- 数量选择 -->
+      <div class="quantity-selector">
+        <div class="quantity-title">Quantity</div>
+        <div class="quantity-control">
+          <button class="quantity-btn">-</button>
+          <input type="text" class="quantity-input" value="1">
+          <button class="quantity-btn">+</button>
+        </div>
+      </div>
+      
+      <!-- 产品操作按钮 -->
+      <div class="product-actions">
+        <button class="btn-product btn-cart">Add to Cart</button>
+        <button class="btn-product btn-wishlist"> <i class="far fa-heart"></i> </button>
+      </div>
+      
+      <!-- 促销信息 -->
+      <div class="product-promotion">
+        <div class="promotion-title"> <i class="fas fa-gift"></i> Promotional offers </div>
+        <div class="promotion-item">A discount of 30 yuan off for orders over 299 yuan and 80 yuan off for orders over 499 yuan</div>
+        <div class="promotion-item">New users will enjoy a 15-yuan discount on their first order</div>
+        <div class="promotion-item">Members enjoy an exclusive 15% discount</div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 产品详情标签页 -->
+  <div class="product-tabs">
+    <div class="tab-header">
+      <button class="tab-btn active" data-tab="description">Product Details</button>
+      <button class="tab-btn" data-tab="spec">Specification parameters</button>
+      <button class="tab-btn" data-tab="reviews">Product Evaluation (1,245)</button>
+      <button class="tab-btn" data-tab="qa">Q & A</button>
+    </div>
+    <div class="tab-content active" id="description">
+      <h3>Product Introduction</h3>
+      <p>CARSLAN Fog Lip Gloss, with an innovative matte formula, turns into a mist with a single application, is light and imperceptible, and provides long-lasting color retention. Rich in plant essential oil components, it moisturizes the lips without dryness and creates a high-end matte makeup effect.。</p>
+     
+      <h3>Product features</h3>
+      <ul>
+        <li>Advanced matte makeup effect: Unique matte formula creates an advanced matte lip makeup.</li>
+        <li>Long-lasting color lock: Long-lasting makeup retention for 8 hours without fading easily.</li>
+        <li>Light and comfortable: Light and thin texture, no sense of heaviness.</li>
+        <li>Moisturizing and hydrating: Containing plant essential oil ingredients, protecting the lips.</li>
+        <li>Easy to apply: Innovative brush head design for precise coloring.</li>
+      </ul>
+     </div>
+    <div class="tab-content" id="spec">
+      <h3>规格参数</h3>
+      <table style="width: 100%; border-collapse: collapse;">
+        <tr style="border-bottom: 1px solid #f0f0f0;">
+          <td style="padding: 10px; width: 120px; color: #666;">产品名称</td>
+          <td style="padding: 10px;">卡姿兰雾吻唇釉</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #f0f0f0;">
+          <td style="padding: 10px; color: #666;">色号</td>
+          <td style="padding: 10px;">M01 蜜桃色</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #f0f0f0;">
+          <td style="padding: 10px; color: #666;">规格</td>
+          <td style="padding: 10px;">3.5g</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #f0f0f0;">
+          <td style="padding: 10px; color: #666;">保质期</td>
+          <td style="padding: 10px;">36个月</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #f0f0f0;">
+          <td style="padding: 10px; color: #666;">产地</td>
+          <td style="padding: 10px;">中国</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #f0f0f0;">
+          <td style="padding: 10px; color: #666;">适合肤质</td>
+          <td style="padding: 10px;">所有肤质</td>
+        </tr>
+      </table>
+    </div>
+    <div class="tab-content" id="reviews">
+      <h3>商品评价</h3>
+      <div style="display: flex; align-items: center; margin-bottom: 20px;">
+        <div style="font-size: 28px; color: #e83a7d; margin-right: 15px;">4.8</div>
+        <div>
+          <div style="color: #ffb400; margin-bottom: 5px;"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i> </div>
+          <div style="font-size: 14px; color: #666;">1,245条评价</div>
+        </div>
+      </div>
+      <div style="background-color: #f9f9f9; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;"> <span style="font-size: 14px; color: #333;">全部评价(1,245)</span> <a href="#" style="font-size: 14px; color: #e83a7d; text-decoration: none;">写评价</a> </div>
+        <div style="display: flex; gap: 15px; overflow-x: auto; padding-bottom: 10px;">
+          <button style="padding: 5px 15px; background-color: #ffecec; color: #e83a7d; border: none; border-radius: 15px; font-size: 14px; white-space: nowrap;">有图(428)</button>
+          <button style="padding: 5px 15px; background-color: #f9f9f9; color: #666; border: none; border-radius: 15px; font-size: 14px; white-space: nowrap;">好评(1,128)</button>
+          <button style="padding: 5px 15px; background-color: #f9f9f9; color: #666; border: none; border-radius: 15px; font-size: 14px; white-space: nowrap;">中评(89)</button>
+          <button style="padding: 5px 15px; background-color: #f9f9f9; color: #666; border: none; border-radius: 15px; font-size: 14px; white-space: nowrap;">差评(28)</button>
+        </div>
+      </div>
+      
+      <!-- 评价示例 -->
+      <div style="border-bottom: 1px solid #f0f0f0; padding: 15px 0;">
+        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;"> <span style="font-weight: bold;">匿名用户</span> <span style="color: #999; font-size: 14px;">2025-05-10</span> </div>
+        <div style="color: #ffb400; margin-bottom: 10px;"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </div>
+        <div style="margin-bottom: 10px;"> 颜色非常漂亮，上嘴很显白，而且不拔干，比我之前买的国际大牌还要好用！ </div>
+        <div style="display: flex; gap: 10px;"> </div>
+      </div>
+      <div style="text-align: center; margin-top: 20px;">
+        <button style="padding: 8px 20px; background-color: white; color: #e83a7d; border: 1px solid #e83a7d; border-radius: 4px; cursor: pointer;">查看更多评价</button>
+      </div>
+    </div>
+    <div class="tab-content" id="qa">
+      <h3>常见问题</h3>
+      <div style="margin-bottom: 20px;">
+        <div style="font-weight: bold; margin-bottom: 5px;">Q: 这款唇釉会拔干吗？</div>
+        <div style="color: #666; line-height: 1.6;">A: 卡姿兰雾吻唇釉含有植物精油成分，虽然是哑光质地但不会拔干，比传统哑光唇釉更滋润。</div>
+      </div>
+      <div style="margin-bottom: 20px;">
+        <div style="font-weight: bold; margin-bottom: 5px;">Q: 持久度如何？会沾杯吗？</div>
+        <div style="color: #666; line-height: 1.6;">A: 这款唇釉持久度很好，正常喝水会有轻微沾杯，但颜色基本不会掉，可以保持6-8小时。</div>
+      </div>
+      <div style="margin-bottom: 20px;">
+        <div style="font-weight: bold; margin-bottom: 5px;">Q: 敏感唇部可以使用吗？</div>
+        <div style="color: #666; line-height: 1.6;">A: 本产品经过皮肤测试，温和不刺激，但如果您有特别敏感的唇部，建议先在手腕内侧测试。</div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 相关推荐 -->
+  <div class="related-products">
+    <h2 class="section-title">Guess you like it</h2>
+    <div class="related-list"> 
+      <!-- 相关商品1 -->
+      <div class="related-item"> <img src="images/related1.jpg" alt="相关商品" class="related-image">
+        <div class="related-info">
+          <div class="related-name">CARSLAN Water Kiss Lipstick #S05 Strawberry Red</div>
+          <div class="related-price">$14 <span class="related-original-price">$18</span></div>
+        </div>
+      </div>
+      
+      <!-- 相关商品2 -->
+      <div class="related-item"> <img src="images/related2.jpg" alt="相关商品" class="related-image">
+        <div class="related-info">
+          <div class="related-name">CARSLAN Big Eyes Double Head Mascara</div>
+          <div class="related-price">$15 <span class="related-original-price">$19</span></div>
+        </div>
+      </div>
+      
+      <!-- 相关商品3 -->
+      <div class="related-item"> <img src="images/related3.jpg" alt="相关商品" class="related-image">
+        <div class="related-info">
+          <div class="related-name">CARSLAN Little Kitten Foundation #02 Natural Color</div>
+          <div class="related-price">$22 <span class="related-original-price">$28</span></div>
+        </div>
+      </div>
+      
+      <!-- 相关商品4 -->
+      <div class="related-item"> <img src="images/related4.jpg" alt="相关商品" class="related-image">
+        <div class="related-info">
+          <div class="related-name">CARSLAN Fine Eyebrow Pencil #03 Grayish-brown</div>
+          <div class="related-price">$8&nbsp; <span class="related-original-price">$11</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 底部 -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Shopping Guide</h4>
+        <ul>
+          <li><a href="#">How to Order</a></li>
+          <li><a href="#">Membership</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Shipping & Delivery</h4>
+        <ul>
+          <li><a href="#">Click and Collect</a></li>
+          <li><a href="#">Delivery</a></li>
+          <li><a href="#">Delivery Areas</a></li>
+          <li><a href="#">Delivery Charges</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Payment Methods</h4>
+        <ul>
+          <li><a href="#">Online Payment</a></li>
+          <li><a href="#">Cash on Delivery (COD)</a></li>
+          <li><a href="#">Installment Plans</a></li>
+          <li><a href="#">Gift Card Payment</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About GuoseGlow</h4>
+        <ul>
+          <li><a href="#">About GuoseGlow</a></li>
+          <li><a href="#">Newsroom</a></li>
+          <li><a href="#">Join Us</a></li>
+          <li><a href="#">Store Locator</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-links"><a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-google"></i></a> <a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-facebook"></i></a></div>
+        <div class="contact-info">
+          <p>Customer Service Hotline:400-123-4567</p>
+          <p>Service Hours：9:00-21:00</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 GuoseGlow Chinese Beauty Brand Promotion Co., Ltd. Privacy Policy</p>
+      <div class="legal-links"> <a href="#"> Privacy Policy </a> <a href="#"> Terms of Use</a> <a href="#">Legal Disclaimer</a> </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
